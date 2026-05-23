@@ -1,4 +1,4 @@
-package pe.edu.vallegrande.model;
+package pe.edu.vallegrande.kevinpersonarest.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

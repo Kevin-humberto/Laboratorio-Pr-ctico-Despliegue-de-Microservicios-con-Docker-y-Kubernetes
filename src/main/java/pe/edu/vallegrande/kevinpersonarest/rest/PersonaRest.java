@@ -1,10 +1,11 @@
-package pe.edu.vallegrande.rest;
+package pe.edu.vallegrande.kevinpersonarest.rest;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import pe.edu.vallegrande.model.Persona;
-import pe.edu.vallegrande.service.PersonaService;
+
+import pe.edu.vallegrande.kevinpersonarest.model.Persona;
+import pe.edu.vallegrande.kevinpersonarest.service.PersonaService;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

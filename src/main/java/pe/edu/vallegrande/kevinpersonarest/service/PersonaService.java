@@ -1,6 +1,6 @@
-package pe.edu.vallegrande.service;
+package pe.edu.vallegrande.kevinpersonarest.service;
 
-import pe.edu.vallegrande.model.Persona;
+import pe.edu.vallegrande.kevinpersonarest.model.Persona;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

@@ -1,10 +1,11 @@
-package pe.edu.vallegrande.service.impl;
+package pe.edu.vallegrande.kevinpersonarest.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import pe.edu.vallegrande.model.Persona;
-import pe.edu.vallegrande.repository.PersonaRepository;
-import pe.edu.vallegrande.service.PersonaService;
+
+import pe.edu.vallegrande.kevinpersonarest.model.Persona;
+import pe.edu.vallegrande.kevinpersonarest.repository.PersonaRepository;
+import pe.edu.vallegrande.kevinpersonarest.service.PersonaService;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
