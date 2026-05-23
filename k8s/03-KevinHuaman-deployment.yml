@@ -42,7 +42,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   key: username
-                  name: kevinfatama-api-secret
+                  name: kevinhuaman-api-secret
             - name: SECRET_PASSWORD
               valueFrom:
                 secretKeyRef:
