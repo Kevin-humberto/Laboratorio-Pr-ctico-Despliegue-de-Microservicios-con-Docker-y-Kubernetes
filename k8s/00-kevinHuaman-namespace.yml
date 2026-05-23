@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kevinhuaman-api-ns
+  labels:
+    environment: clase
+    managed-by: kubectl
+    curso: Fundamento-de-resdes

@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kevinhuaman-api-deployment
+  namespace: kevinhuaman-api-ns
+  labels:
+    app: kevinhuaman-api
+
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: kevinhuaman-api
+  template:
+    metadata:
+      labels:
+        app: kevinhuaman-api
+    spec:
+      containers:
+        - name: kevinhuaman-api
+          image: kevinhuaman-api:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8085
+          env:
+            - name: APP_ENV
+              valueFrom:
+                configMapKeyRef:
+                  key: APP_ENV
+                  name: kevinhuaman-api-config
+            - name: APP_VERSION
+              valueFrom:
+                configMapKeyRef:
+                  key: APP_VERSION
+                  name: kevinhuaman-api-config
+            - name: APP_PORT
+              valueFrom:
+                configMapKeyRef:
+                  key: APP_PORT
+                  name: kevinhuaman-api-config
+            - name: SECRET_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  key: username
+                  name: kevinfatama-api-secret
+            - name: SECRET_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  key: password
+                  name: kevinhuaman-api-secret
+

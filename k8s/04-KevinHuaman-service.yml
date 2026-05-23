@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kevinhuaman-api-service
+  namespace: kevinhuaman-api-ns
+  labels:
+    app: kevinhuaman-api
+spec:
+  selector:
+    app: kevinhuaman-api
+  type: NodePort
+  ports:
+    - port: 8085
+      protocol: TCP
+      targetPort: 8085
+      nodePort: 30080
